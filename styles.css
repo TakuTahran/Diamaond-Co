@@ -85,3 +85,78 @@ input[type='radio']:checked + .option {
   border-color: #d4af37;
   box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
 }
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.metal-options {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.metal-option {
+  text-decoration: none;
+  flex: 1;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.metal-box {
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.metal-box:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.metal-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #151542;
+  text-align: center;
+}
+
+.metal-option:hover .metal-box {
+  background-color: #f7f7f7;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: #151542;
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #3a3b62;
+}

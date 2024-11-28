@@ -9,107 +9,151 @@
 <body>
   <div class="form-container">
     <h1>Create Your Custom Engagement Ring</h1>
-    <form id="ring-quote-form">
-      <!-- Step 1: Contact Details -->
-      <div class="form-section active" id="step-1">
-        <label for="phone-number">Your phone number (for the quote):</label>
-        <input type="tel" id="phone-number" name="phoneNumber" placeholder="e.g., +1234567890" required>
-        <small>We’ll send your quote via SMS.</small>
-      </div>
-
-      <!-- Step 2: Metal Selection -->
-      <div class="form-section" id="step-2">
-        <label for="metal-type">Choose your metal:</label>
+    <form action="#" method="POST" id="custom-ring-form">
+      <!-- Metal Selection -->
+      <div class="form-group">
+        <label for="metal">Select Metal:</label>
         <div class="metal-options">
-          <label>
-            <input type="radio" name="metalType" value="14k White Gold" required>
-            <div class="option">
-              <img src="images/white-gold.jpg" alt="14k White Gold">
-              <p>14k White Gold</p>
+          <a class="metal-option" href="/engagement-rings/design-your-own-ring/french-pave-diamond-engagement-ring-in-14k-white-gold-1-4-ct-tw-item-195273" data-qa="metal_filter_14K_White_Gold">
+            <div class="metal-box" style="border-color: #D8D8D8;">
+              <span class="metal-text">14K White Gold</span>
             </div>
-          </label>
-          <label>
-            <input type="radio" name="metalType" value="14k Rose Gold">
-            <div class="option">
-              <img src="images/rose-gold.jpg" alt="14k Rose Gold">
-              <p>14k Rose Gold</p>
+          </a>
+          <a class="metal-option" href="/engagement-rings/design-your-own-ring/french-pave-diamond-engagement-ring-in-14k-yellow-gold-1-4-ct-tw-item-195871" data-qa="metal_filter_14K_Yellow_Gold">
+            <div class="metal-box" style="border-color: #EDC789;">
+              <span class="metal-text">14K Yellow Gold</span>
             </div>
-          </label>
-          <label>
-            <input type="radio" name="metalType" value="14k Yellow Gold">
-            <div class="option">
-              <img src="images/yellow-gold.jpg" alt="14k Yellow Gold">
-              <p>14k Yellow Gold</p>
+          </a>
+          <a class="metal-option" href="/engagement-rings/design-your-own-ring/french-pave-diamond-engagement-ring-in-14k-rose-gold-1-4-ct-tw-item-195427" data-qa="metal_filter_14K_Rose_Gold">
+            <div class="metal-box" style="border-color: #E1A79F;">
+              <span class="metal-text">14K Rose Gold</span>
             </div>
-          </label>
-          <label>
-            <input type="radio" name="metalType" value="Platinum">
-            <div class="option">
-              <img src="images/platinum.jpg" alt="Platinum">
-              <p>Platinum</p>
+          </a>
+          <a class="metal-option" href="/engagement-rings/design-your-own-ring/french-pave-diamond-engagement-ring-in-platinum-1-4-ct-tw-item-195271" data-qa="metal_filter_Platinum">
+            <div class="metal-box" style="border-color: #757575;">
+              <span class="metal-text">Platinum</span>
             </div>
-          </label>
+          </a>
+          <a class="metal-option" href="/engagement-rings/design-your-own-ring/french-pave-diamond-engagement-ring-in-18k-white-gold-1-4-ct-tw-item-203444" data-qa="metal_filter_18K_White_Gold">
+            <div class="metal-box" style="border-color: #D8D8D8;">
+              <span class="metal-text">18K White Gold</span>
+            </div>
+          </a>
+          <a class="metal-option" href="/engagement-rings/design-your-own-ring/french-pave-diamond-engagement-ring-in-18k-yellow-gold-1-4-ct-tw-item-203445" data-qa="metal_filter_18K_Yellow_Gold">
+            <div class="metal-box" style="border-color: #EDC789;">
+              <span class="metal-text">18K Yellow Gold</span>
+            </div>
+          </a>
         </div>
       </div>
-
-      <!-- Step 3: Band Options -->
-      <div class="form-section" id="step-3">
-        <label for="band-width">Preferred wedding band width:</label>
-        <select id="band-width" name="bandWidth" required>
-          <option value="">-- Select Width --</option>
-          <option value="Thin">Thin</option>
-          <option value="Medium">Medium</option>
-          <option value="Thick">Thick</option>
-        </select>
-        <label for="pave-stones">Pave stones on the band?</label>
-        <div class="pave-options">
-          <label>
-            <input type="radio" name="paveStones" value="None" required>
-            <div class="option">
-              <p>None</p>
-            </div>
-          </label>
-          <label>
-            <input type="radio" name="paveStones" value="Full">
-            <div class="option">
-              <p>Full</p>
-            </div>
-          </label>
-          <label>
-            <input type="radio" name="paveStones" value="3/4">
-            <div class="option">
-              <p>3/4</p>
-            </div>
-          </label>
-          <label>
-            <input type="radio" name="paveStones" value="1/2">
-            <div class="option">
-              <p>1/2</p>
-            </div>
-          </label>
-        </div>
-      </div>
-
-      <!-- Step 4: Timeline -->
-      <div class="form-section" id="step-4">
-        <label for="timeline">When do you need your ring?</label>
-        <select id="timeline" name="timeline" required>
-          <option value="">-- Select Timeline --</option>
-          <option value="Shopping around">I’m just shopping around</option>
-          <option value="1 week">1 week</option>
-          <option value="2 weeks">2 weeks</option>
-          <option value="3 weeks">3 weeks</option>
-          <option value="4+ weeks">4+ weeks</option>
+    
+      <!-- Carat Selection -->
+      <div class="form-group">
+        <label for="carat">Select Carat Weight:</label>
+        <select id="carat" name="carat">
+          <option value="1">1 Carat</option>
+          <option value="1.5">1.5 Carats</option>
+          <option value="2">2 Carats</option>
+          <option value="2.5">2.5 Carats</option>
         </select>
       </div>
-
-      <!-- Navigation Buttons -->
-      <div class="navigation-buttons">
-        <button type="button" id="prev-btn" class="btn-secondary" style="display: none;">Back</button>
-        <button type="button" id="next-btn" class="btn-primary">Next</button>
-        <button type="submit" id="submit-btn" class="btn-primary" style="display: none;">Submit</button>
+    
+      <!-- Diamond Cut -->
+      <div class="form-group">
+        <label for="cut">Select Diamond Cut:</label>
+        <select id="cut" name="cut">
+          <option value="round">Round</option>
+          <option value="princess">Princess</option>
+          <option value="cushion">Cushion</option>
+          <option value="oval">Oval</option>
+          <option value="emerald">Emerald</option>
+          <option value="pear">Pear</option>
+          <option value="asscher">Asscher</option>
+          <option value="heart">Heart</option>
+          <option value="radiant">Radiant</option>
+          <option value="marquise">Marquise</option>
+        </select>
+      </div>
+    
+      <!-- Ring Size -->
+      <div class="form-group">
+        <label for="size">Select Ring Size:</label>
+        <select id="size" name="size">
+          <option value="4">4</option>
+          <option value="4.5">4.5</option>
+          <option value="5">5</option>
+          <option value="5.5">5.5</option>
+          <option value="6">6</option>
+          <option value="6.5">6.5</option>
+          <option value="7">7</option>
+          <option value="7.5">7.5</option>
+          <option value="8">8</option>
+        </select>
+      </div>
+    
+      <!-- Wedding Band Width -->
+      <div class="form-group">
+        <label for="band-width">Select Wedding Band Width:</label>
+        <select id="band-width" name="band-width">
+          <option value="thin">Thin</option>
+          <option value="medium">Medium</option>
+          <option value="thick">Thick</option>
+        </select>
+      </div>
+    
+      <!-- Pave Stones -->
+      <div class="form-group">
+        <label for="pave-stones">Select Pave Stones:</label>
+        <select id="pave-stones" name="pave-stones">
+          <option value="none">None</option>
+          <option value="full">Full</option>
+          <option value="three-quarter">3/4</option>
+          <option value="half">1/2</option>
+        </select>
+      </div>
+    
+      <!-- Halo Option -->
+      <div class="form-group">
+        <label for="halo">Include Halo?</label>
+        <select id="halo" name="halo">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    
+      <!-- Center Stone Color -->
+      <div class="form-group">
+        <label for="color">Select Center Stone Color:</label>
+        <select id="color" name="color">
+          <option value="D">D</option>
+          <option value="E">E</option>
+          <option value="F">F</option>
+          <option value="G">G</option>
+          <option value="H">H</option>
+        </select>
+      </div>
+    
+      <!-- Timeline Preference -->
+      <div class="form-group">
+        <label for="timeline">Timeline Preference:</label>
+        <select id="timeline" name="timeline">
+          <option value="shopping-around">Still Shopping</option>
+          <option value="weeks">I need it in (specify weeks)</option>
+        </select>
+      </div>
+    
+      <!-- Phone Number -->
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" />
+      </div>
+    
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button type="submit" class="submit-btn">Get My Quote</button>
       </div>
     </form>
+    
   </div>
   <script src="script.js"></script>
 </body>
