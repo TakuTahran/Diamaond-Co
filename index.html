@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Engagement Ring Quote</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Create Your Custom Engagement Ring</h1>
+    <form id="ring-quote-form">
+      <!-- Step 1: Contact Details -->
+      <div class="form-section active" id="step-1">
+        <label for="phone-number">Your phone number (for the quote):</label>
+        <input type="tel" id="phone-number" name="phoneNumber" placeholder="e.g., +1234567890" required>
+        <small>We’ll send your quote via SMS.</small>
+      </div>
+
+      <!-- Step 2: Metal Selection -->
+      <div class="form-section" id="step-2">
+        <label for="metal-type">Choose your metal:</label>
+        <div class="metal-options">
+          <label>
+            <input type="radio" name="metalType" value="14k White Gold" required>
+            <div class="option">
+              <img src="images/white-gold.jpg" alt="14k White Gold">
+              <p>14k White Gold</p>
+            </div>
+          </label>
+          <label>
+            <input type="radio" name="metalType" value="14k Rose Gold">
+            <div class="option">
+              <img src="images/rose-gold.jpg" alt="14k Rose Gold">
+              <p>14k Rose Gold</p>
+            </div>
+          </label>
+          <label>
+            <input type="radio" name="metalType" value="14k Yellow Gold">
+            <div class="option">
+              <img src="images/yellow-gold.jpg" alt="14k Yellow Gold">
+              <p>14k Yellow Gold</p>
+            </div>
+          </label>
+          <label>
+            <input type="radio" name="metalType" value="Platinum">
+            <div class="option">
+              <img src="images/platinum.jpg" alt="Platinum">
+              <p>Platinum</p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Step 3: Band Options -->
+      <div class="form-section" id="step-3">
+        <label for="band-width">Preferred wedding band width:</label>
+        <select id="band-width" name="bandWidth" required>
+          <option value="">-- Select Width --</option>
+          <option value="Thin">Thin</option>
+          <option value="Medium">Medium</option>
+          <option value="Thick">Thick</option>
+        </select>
+        <label for="pave-stones">Pave stones on the band?</label>
+        <div class="pave-options">
+          <label>
+            <input type="radio" name="paveStones" value="None" required>
+            <div class="option">
+              <p>None</p>
+            </div>
+          </label>
+          <label>
+            <input type="radio" name="paveStones" value="Full">
+            <div class="option">
+              <p>Full</p>
+            </div>
+          </label>
+          <label>
+            <input type="radio" name="paveStones" value="3/4">
+            <div class="option">
+              <p>3/4</p>
+            </div>
+          </label>
+          <label>
+            <input type="radio" name="paveStones" value="1/2">
+            <div class="option">
+              <p>1/2</p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Step 4: Timeline -->
+      <div class="form-section" id="step-4">
+        <label for="timeline">When do you need your ring?</label>
+        <select id="timeline" name="timeline" required>
+          <option value="">-- Select Timeline --</option>
+          <option value="Shopping around">I’m just shopping around</option>
+          <option value="1 week">1 week</option>
+          <option value="2 weeks">2 weeks</option>
+          <option value="3 weeks">3 weeks</option>
+          <option value="4+ weeks">4+ weeks</option>
+        </select>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="navigation-buttons">
+        <button type="button" id="prev-btn" class="btn-secondary" style="display: none;">Back</button>
+        <button type="button" id="next-btn" class="btn-primary">Next</button>
+        <button type="submit" id="submit-btn" class="btn-primary" style="display: none;">Submit</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
